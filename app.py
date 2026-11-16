@@ -10,7 +10,7 @@ from security import AccessPolicy, UserContext
 
 
 def main() -> None:
-    # 1. Обычное сообщение
+
     message = Message(
         "Рады предложить вам должность младшего Python-разработчика. "
     )
