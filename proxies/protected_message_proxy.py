@@ -18,4 +18,4 @@ class ProtectedMessageProxy(BaseMessage):
         if self._access_policy.is_allowed(self._user_context):
             return self._message.render()
         else:
-            raise PermissionError(self._user_context.username)
+            raise PermissionError(f"{self._user_context.username} пользователь не найден")
